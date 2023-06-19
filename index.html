@@ -11,7 +11,7 @@
       font-family: Arial, sans-serif;
       text-align: center;
       background-color: #f0f0f0;
-      padding-bottom: 60px; /* Footer Höhe */
+      padding-bottom: 60px;
     }
     h1 {
       color: #008CBA;
@@ -90,15 +90,37 @@
       left: 0;
       bottom: 0;
       width: 100%;
-      height: 60px; /* Footer Höhe */
       background-color: #008CBA;
       color: white;
       text-align: center;
-      line-height: 60px; /* Zentriert den Text vertikal */
+      padding: 10px 0;
     }
+
     footer p {
       margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
     }
+
+    @media (max-width: 600px) {
+      #slotMachine ul li {
+        font-size: 0.8em;
+      }
+    }
+
+    @media (max-width: 600px) {
+      #slotMachineOverlay {
+        top: 190px;
+      }
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5em;
+      }
+    }
+
   </style>
 </head>
 <body>
